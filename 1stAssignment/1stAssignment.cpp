@@ -2,8 +2,23 @@
 //
 #include "Student.h"
 #include <iostream>
-using namespace std;
+#include <string>
+using namespace std; // using namespace we can ignore using std:: and just use cout easily
 
+
+
+class Person {
+    
+
+    void doPersonFunction() {
+
+    }
+
+public:
+    float weight;
+    std::string name;
+    int age;
+};
 
 int main()
 {
@@ -11,6 +26,23 @@ int main()
     function();
     student1.Write();
     student1.SetName("John");
+
+    Person person1;
+    person1.age = 19;
+
+    unsigned int i = 41;
+    /*printf("%d\n", i);*/
+    std::cout << i << std::endl;
+    std::cout << sizeof(char) << std::endl;
+    cout << sizeof(Person) << std::endl;
+    char c = 'A';
+
+    cout << i++ << endl;
+
+    i++;
+    i += 5;
+
+    cout << &i << endl;
     
     cout << "Hello, World!" << endl;
     cout << "Git is now tracking this project!" << endl;
