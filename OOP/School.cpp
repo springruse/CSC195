@@ -39,3 +39,12 @@ void school::displayAll()
 		human->write();
 	}
 }
+
+void school::displayByType(Human::Type type)
+{
+	for (Human* human : m_humans) {
+		if (human->getType() == type) {
+			human->write();
+		}
+	}
+}

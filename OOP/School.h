@@ -9,17 +9,11 @@ public:
 	void add(Human::Type type);
 
 	void displayAll();
-	
 
-	void displayByType(Human::Type type) {
+	void displayByType(Human::Type type);
 
-	}
+	// void displayByName(std::string name);
 
-	void displayByName(std::string name) {
-		
-	}
-
-	
 private:
 	std::vector<Human*> m_humans;
 	

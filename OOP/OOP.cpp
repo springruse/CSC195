@@ -35,9 +35,15 @@ int main()
 			NicholasSchool.displayAll();
 			break;
 		case 3:
-			type = 4;
+			std::cout << "1)Student\n";
+			std::cout << "2)Teacher\n";
+			unsigned short type2;
+			std::cin >> type2;
+			system("cls");
+			NicholasSchool.displayByType(static_cast<Human::Type>(type2 - 1));
 			break;
 		case 4:
+			std::cout << "Goodbye!" << std::endl;
 			isRunning = false;
 			break;
 		default:
