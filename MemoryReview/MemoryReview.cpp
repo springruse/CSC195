@@ -37,7 +37,7 @@ int main()
 	cout << "new int variable: " << integer << endl;
 
 	// what happened to the int variable when the reference was changed? 
-	// EDIT NOTE: The int variable changed to 10, because the integer follows the reference.
+	// ANSWER NOTE: The int variable changed to 10, because the integer follows the reference.
 
 	// output the address of the int variable
 
@@ -48,7 +48,7 @@ int main()
 	cout << "Address of int reference: " << &intReference << endl;
 
 	// are the addresses the same or different? 
-	// EDIT NOTE: They are the same, because they're just under the same variable, being connected to one another.
+	// ANSWER NOTE: They are the same, because they're just under the same variable, being connected to one another.
 	
 	// ** REFERENCE PARAMETER **
 	// create a function above main() called Square that takes in an int parameter
@@ -90,5 +90,5 @@ int main()
 	// output the int variable created in the REFERENCE section
 	cout << "Int variable after Double function: " << integer << endl;
 	// did the int variable's value change when using the pointer?
-	//EDIT NOTE: It was changed to 200 after the function was used because the pointer was dereferenced, changing the integers value as-well.
+	//ANSWER NOTE: It was changed to 200 after the function was used because the pointer was dereferenced, changing the integers value as-well.
 }
